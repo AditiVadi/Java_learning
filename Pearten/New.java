@@ -175,6 +175,47 @@ public class New {
         }
     }
 
+    public static void p13(int n) {
+        System.out.println("New Pearten p13:");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == j || j + i == n + 1) {
+                    System.out.print(i);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void p14(int n) {
+        System.out.println("New Pearten p14:");
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(' ');
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                if (j % 2 == 0) {
+                    System.out.print('A');
+                } else {
+                    System.out.print('*');
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void p15(int n) {
+        System.out.println("New Pearten p15:");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {// a->97 && A->64
+                System.out.print((char) (64 + j));
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Numbers of Peartens");
@@ -193,6 +234,9 @@ public class New {
             p10(n);
             p11(n);
             p12(n);
+            p13(n);
+            p14(n);
+            p15(n);
         }
     }
 }
